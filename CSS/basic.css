@@ -1,0 +1,10 @@
+:root {
+  --base-color: #5f5f5f;
+  --primary-color: #ff5300;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  font-size: calc(0.1em + 0.9vw);
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+.container-1 {
+  margin: 5vw 0vw;
+}
+/* CSS of header  */
+header {
+  position: fixed;
+  z-index: 3;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5vw 0.8vw 0.4vw 0.8vw;
+  border-bottom: white;
+  align-items: center;
+  border-bottom: 0.01rem solid rgb(231, 231, 231);
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding: 0vw 1vw;
+}
+
+/* Css of LOGO  */
+
+#logo {
+  background-image: url("/images/logo.png");
+  background-position: 0px -186px;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 35px;
+}
+#logo_search {
+  display: flex;
+  align-items: center;
+}
+#logo_search input {
+  background: none;
+  border: none;
+  border-radius: 15px;
+  width: 20vw;
+  padding: 5px;
+  color: white;
+}
+#logo_search ::placeholder {
+  color: rgb(178, 176, 176);
+}
+#logo_search input:focus {
+  outline: none;
+}
+
+/* CSS of Banner  */
+
+.transition {
+  z-index: 2;
+  background-image: url("/images/banner.jpg");
+  width: 100%;
+  height: 48vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.transition::after {
+  content: "";
+  position: absolute;
+  background-color: #00000070;
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  z-index: 3;
+  position: absolute;
+  left: 19%;
+  top: 25%;
+  padding: 1vw;
+  color: white;
+  height: 70%;
+}
+
+.banner > p {
+  font-size: 350%;
+  margin: 0%;
+  text-align: center;
+}
+
+/* CSS of Changing titles */
+#changing-title {
+  font-size: 600%;
+  font-weight: bold;
+  height: 7vw;
+  overflow: hidden;
+  margin: 1%;
+}
+@keyframes scrolling {
+  0% {
+    transform: translate(0%, -10%);
+  }
+  26% {
+    transform: translate(0%, -110%);
+  }
+  50% {
+    transform: translate(0%, -210%);
+  }
+  75% {
+    transform: translate(0%, -310%);
+  }
+  100% {
+    transform: translate(0%, -410%);
+  }
+}
+#changing-title p {
+  margin: 0%;
+  text-align: center;
+  animation-name: scrolling;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+/* CSS of banner ul  */
+
+.banner ul {
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+  margin-bottom: 1.1%;
+  margin-top: 7%;
+}
+.banner li a {
+  padding: 0.7vw 2vw;
+  color: white;
+  background-color: #464545d2;
+  text-decoration: none;
+  border-right: 2px solid white;
+}
+
+.banner li:nth-child(5) a {
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+}
+.banner li:nth-child(1) a {
+  border-radius: 8px 0px 0px 8px;
+}
+.banner li a:hover {
+  background-color: var(--primary-color);
+}
+.banner ul i {
+  padding: 0.2vw;
+}
+.banner input {
+  width: 60vw;
+  padding: 1vw;
+  border-radius: 15px;
+  border: none;
+}
+.banner input:focus {
+  outline: none;
+}
+#banner_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  height: 38%;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  color: rgb(227, 224, 224);
+}
+.stats i {
+  padding: 0vw 1vw;
+}
+.stats div {
+  font-size: small;
+}
+
+/* CSS of Escape section  */
+
+#escape {
+  display: flex;
+  justify-content: center;
+}
+#escape_cards {
+  display: flex;
+}
+#escape_heading div {
+  margin: auto;
+  font-size: 200%;
+  font-weight: bold;
+  width: 20vw;
+}
+#escape_heading hr {
+  width: 2vw;
+  height: 20px;
+  color: var(--primary-color);
+}
