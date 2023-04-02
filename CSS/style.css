@@ -189,6 +189,7 @@ nav li {
 #escape {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #escape_cards {
   display: flex;
@@ -200,7 +201,78 @@ nav li {
   width: 20vw;
 }
 #escape_heading hr {
-  width: 2vw;
-  height: 20px;
-  color: var(--primary-color);
+  width: 4vw;
+  border-top: 3px solid var(--primary-color);
+  margin-left: 0px;
+}
+.escape_img {
+  margin: 1vw;
+}
+#escape_cards {
+  margin-left: 4vw;
+}
+.escape_img img {
+  border-radius: 15px;
+}
+/* CSS of grid  */
+#grid {
+  display: flex;
+  justify-content: center;
+}
+.grid_left img {
+  width: 39vw;
+  margin-bottom: 1.2vw;
+  border-radius: 15px;
+}
+
+.grid_right {
+  display: flex;
+  /* height: 3vw; */
+  flex-direction: column;
+}
+.grid_right_outer {
+  display: flex;
+}
+
+.grid_right img {
+  display: block;
+  width: 11vw;
+  border-radius: 15px;
+}
+.right_big_img {
+  /* flex-grow: 2; */
+  /* margin: 0.5vw; */
+  height: 14.4vw;
+
+  /* object-fit: contain; */
+}
+.right_small_img {
+  height: 11vw;
+}
+.right_small_img img {
+  height: 11vw;
+}
+
+.right_big_img,
+.right_small_img {
+  margin: 0vw 0vw 1.2vw 1vw;
+}
+.right_big_img img {
+  height: 14.4vw;
+}
+.right_big_img::after {
+  content: "";
+  position: absolute;
+  background-color: #00000070;
+  width: 11vw;
+  height: 14.4vw;
+}
+.right_small_img::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #00000070;
+  width: 11vw;
+  height: 11vw;
 }
