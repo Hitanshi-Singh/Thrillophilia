@@ -207,6 +207,12 @@ nav li {
 }
 .escape_img {
   margin: 1vw;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.escape_img:hover {
+  transform: scale(1.06);
 }
 #escape_cards {
   margin-left: 4vw;
