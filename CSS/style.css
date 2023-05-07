@@ -541,6 +541,8 @@ body {
 }
 .destination-grid-item {
   display: flex;
+  /* width: 25%; */
+  /* justify-content: center; */
 }
 .destination-grid-item img {
   width: 4.5vw;
@@ -550,4 +552,23 @@ body {
 .destination-grid-item div p {
   margin: 0%;
   padding: 0% 1vw;
+}
+.small {
+  font-size: calc(0.1em + 0.8vw);
+}
+.destination-grid-item:hover {
+  border: none;
+  /* box-shadow: 2px 2px grey; */
+}
+.destination-grid-item a {
+  padding: 0.5vw 1vw;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+.destination-grid-item a:hover {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
